@@ -59,6 +59,15 @@
                             </a>
                         </li>
                     </ul>
+                    <ul class="nav nav-treeview">
+                        {{-- Item --}}
+                        <li class="nav-item">
+                            <a href="{{ route('item.index') }}" class="nav-link @yield('item')">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-bars nav-icon"></i>
+                                <p>Item</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
             </ul>
