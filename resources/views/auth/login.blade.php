@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Absensi | Login</title>
+    <title>E-Kasir | Login</title>
 
+    <link rel="icon" type="image/png" href="{{ asset('admin/dist/images/logo.jpg') }}" sizes="16x16">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -22,10 +23,12 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <p class="h1"><b>Aplikasi</b>Absensi</p>
+                <img src="{{ asset('admin/dist/images/logo.jpg') }}" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-2" style="opacity: .8;width:70%">
+                <p class="h1">Aplikasi Sirop Buah Kesambi</p>
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Silahkan Login Menggunakan Email Dan Password Yang Sudah Di Berikan Admin
+                <p class="login-box-msg">Masukan email dan password!
                 </p>
                 @if (Session::has('fail'))
                     <div class="alert alert-danger">

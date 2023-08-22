@@ -2,8 +2,8 @@
     <!-- Brand Logo -->
     <a href="/home" class="brand-link">
         {{-- <img src="{{ asset('admin/dist/images/logo-lam-kprs.png') }}" alt="AdminLTE Logo" style="width:200px"> --}}
-        {{-- <img src="{{ asset('admin/dist/images/logo-lam-kprs.png') }}" alt="AdminLTE Logo" class="brand-image"
-            style="width: 20"> --}}
+        <img src="{{ asset('admin/dist/images/logo.jpg') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-2"
+            style="opacity: .8">
         <span class="brand-text font-weight-light">E-Kasir</span>
     </a>
 
@@ -18,7 +18,8 @@
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
 

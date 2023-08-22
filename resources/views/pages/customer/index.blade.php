@@ -25,9 +25,9 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <a href="{{ route('customer.create') }}" type="button"
-                                    class="btn btn-primary btn-sm">Tambah
-                                    Data</a>
+                                <a href="{{ route('customer.create') }}" type="button" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-plus"></i>
+                                    Tambah Data</a>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
@@ -39,7 +39,7 @@
                                             <th>Nomer HP</th>
                                             <th>Alamat</th>
                                             <th>Deskrispi</th>
-                                            <th style="width: 18%">Action</th>
+                                            <th style="width: 5%">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -51,24 +51,16 @@
                                                 <td>{{ $item->address }}</td>
                                                 <td>{{ $item->description }}</td>
                                                 <td style="text-align: center;">
-                                                    {{-- <form action="{{ route('category.destroy', $item->id) }}"
-                                                        method="POST">
-                                                        @method('DELETE') @csrf --}}
                                                     <div class="btn-group" role="group" aria-label="Basic example">
                                                         <a href="{{ route('customer.edit', $item->id) }}"
                                                             class="btn btn-sm btn-outline-secondary">
-                                                            Edit
+                                                            <i class="fas fa-edit"></i>
                                                         </a>
                                                         <button type="submit"
                                                             onclick="confirmDelete('{{ route('customer.destroy', $item->id) }}')"
                                                             class="btn btn-sm btn-outline-danger delete-button">
-                                                            Delete
+                                                            <i class="fas fa-trash"></i>
                                                         </button>
-
-                                                        {{-- <button type="submit" onclick="return confirm('Are you sure?')"
-                                                                class="btn btn-sm btn-outline-danger">
-                                                                Delete
-                                                            </button> --}}
                                                     </div>
                                                     {{-- </form> --}}
 

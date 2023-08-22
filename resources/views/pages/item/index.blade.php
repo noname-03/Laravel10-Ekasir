@@ -26,7 +26,8 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <a href="{{ route('item.create') }}" type="button" class="btn btn-primary btn-sm">Tambah
+                                <a href="{{ route('item.create') }}" type="button" class="btn btn-primary btn-sm"><i
+                                        class="fas fa-plus"></i> Tambah
                                     Data</a>
                             </div>
                             <!-- /.card-header -->
@@ -41,7 +42,7 @@
                                             <th>Harga</th>
                                             <th>Stok</th>
                                             <th>Photo</th>
-                                            <th style="width: 18%">Action</th>
+                                            <th style="width: 5%">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -61,12 +62,12 @@
                                                     <div class="btn-group" role="group" aria-label="Basic example">
                                                         <a href="{{ route('item.edit', $item->id) }}"
                                                             class="btn btn-sm btn-outline-secondary">
-                                                            Edit
+                                                            <i class="fas fa-edit"></i>
                                                         </a>
                                                         <button type="submit"
                                                             onclick="confirmDelete('{{ route('item.destroy', $item->id) }}')"
                                                             class="btn btn-sm btn-outline-danger delete-button">
-                                                            Delete
+                                                            <i class="fas fa-trash"></i>
                                                         </button>
                                                     </div>
                                                     {{-- </form> --}}
