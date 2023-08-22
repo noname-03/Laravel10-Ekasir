@@ -50,6 +50,15 @@
                             </a>
                         </li>
                     </ul>
+                    <ul class="nav nav-treeview">
+                        {{-- Unit --}}
+                        <li class="nav-item">
+                            <a href="{{ route('unit.index') }}" class="nav-link @yield('unit')">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-bars nav-icon"></i>
+                                <p>Unit</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
             </ul>
