@@ -33,7 +33,7 @@
 
                 <li class="nav-item">
                     <a href="{{ route('customer.index') }}" class="nav-link @yield('customer')"">
-                        <i class="nav-icon far fa-calendar-alt"></i>
+                        <i class="nav-icon fas fa-store"></i>
                         <p>
                             Pelanggan
                             <span class="badge badge-info right">@yield('countCustomer')</span>
@@ -43,7 +43,7 @@
 
                 <li class="nav-item @yield('data.product')">
                     <a href="#" class="nav-link @yield('nav')">
-                        <i class="nav-icon fas fa-user"></i>
+                        <i class="nav-icon fas fa-box-open"></i>
                         <p>
                             Data Produk
                             <i class="fas fa-angle-left right"></i>
@@ -77,6 +77,16 @@
                             </a>
                         </li>
                     </ul>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="{{ route('user.index') }}" class="nav-link @yield('user')"">
+                        <i class="nav-icon fas fa-user"></i>
+                        <p>
+                            User
+                        </p>
+                    </a>
                 </li>
 
             </ul>
