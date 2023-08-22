@@ -31,6 +31,15 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{ route('customer.index') }}" class="nav-link @yield('customer')"">
+                        <i class="nav-icon far fa-calendar-alt"></i>
+                        <p>
+                            Pelanggan
+                            <span class="badge badge-info right">@yield('countCustomer')</span>
+                        </p>
+                    </a>
+                </li>
 
                 <li class="nav-item @yield('data.product')">
                     <a href="#" class="nav-link @yield('nav')">
