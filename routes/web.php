@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\UnitController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -26,4 +27,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('item', ItemController::class);
     Route::resource('customer', CustomerController::class);
     Route::resource('user', UserController::class);
+    Route::resource('transaction', TransactionController::class);
+
+    // Route::get('transaction', [ItemController::class, 'destroy'])->name('item.delete');
 });

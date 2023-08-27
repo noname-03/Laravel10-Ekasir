@@ -80,6 +80,35 @@
                     </ul>
                 </li>
 
+                <li class="nav-item @yield('data.transaction')">
+                    <a href="#" class="nav-link @yield('nav')">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        <p>
+                            Data Transaksi
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+
+                    <ul class="nav nav-treeview">
+                        {{-- Tambah Transaksi --}}
+                        <li class="nav-item">
+                            <a href="{{ route('transaction.create') }}" class="nav-link @yield('transaction.create')">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-bars nav-icon"></i>
+                                <p>Tambah Transaksi</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-treeview">
+                        {{-- Data Transaksi  --}}
+                        <li class="nav-item">
+                            <a href="{{ route('transaction.index') }}" class="nav-link @yield('transaction.index')">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-bars nav-icon"></i>
+                                <p>Data Transaksi </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
 
                 <li class="nav-item">
                     <a href="{{ route('user.index') }}" class="nav-link @yield('user')"">
